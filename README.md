@@ -5,7 +5,9 @@ This project is the final assignment in the Udacity Front-end Developer Nanodegr
 Click <a href="https://heyjane.github.io/frontend-nanodegree-feedreader">here</a> to view this project online.  You will see the RSS feeds displayed on the top half of your screen, and the Jasmine results showing 7 tests with 0 failures (see screenshot below).
 
 You can view the Jasmine spec file source code at
-<a href="https://github.com/heyjane/frontend-nanodegree-feedreader/blob/master/jasmine/spec/feedreader.js">https://github.com/heyjane/frontend-nanodegree-feedreader/blob/master/jasmine/spec/feedreader.js</a>.
+<a href="https://github.com/heyjane/frontend-nanodegree-feedreader/blob/master/jasmine/spec/feedreader.js">https://github.com/heyjane/frontend-nanodegree-feedreader/blob/master/jasmine/spec/feedreader.js</a>.  The file <a href="https://github.com/heyjane/frontend-nanodegree-feedreader/blob/master/resources.txt">https://github.com/heyjane/frontend-nanodegree-feedreader/blob/master/resources.txt</a> describes the resources
+used to research and complete this project.
+
 
 
 
