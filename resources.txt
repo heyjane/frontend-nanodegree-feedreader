@@ -1,0 +1,15 @@
+Before attempting this project, I completed the Udacity JavaScript Testing
+course.  Luckily, I spent some serious time researching and resolving
+issues around asynchronous functions and responses for Project 5, so
+the information I learned from that project was immediately useful for
+this next project!  I also used the Introduction to Jasmine (http://jasmine.github.io/2.2/introduction.html) as well as other GitHub resources.
+
+This project was helpful in getting a new perspective on code development.
+In essence, it flipped the paradigm to give some insights into developing
+defensively:)
+
+Honestly, most of the work was already done for us in this project, so
+it was a good opportunity to regroup at the end and reflect on different ways
+to approach development.
+
+Thanks for taking the time to review my project!

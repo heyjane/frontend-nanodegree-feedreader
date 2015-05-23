@@ -20,12 +20,15 @@ $(function() {
          * the rest of this project. What happens when you change
          * allFeeds in app.js to be an empty array and refresh the
          * page?
+         ****NOTE:  When I changed the allFeeds array to an empty
+         * array, the Jasmine test failed as expected!  I then reset
+         * the array to complete the rest of the project.
          */
         it('are defined', function() {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).not.toBe(0);
         });
-        /* TODO: Write a test that loops through each feed
+        /* This test loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
@@ -36,7 +39,7 @@ $(function() {
             }
         });
 
-        /* TODO: Write a test that loops through each feed
+        /* This test loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
@@ -48,22 +51,20 @@ $(function() {
         });
     });
 
-    /* TODO: Write a new test suite named "The menu" */
+    /* New test suite named "The menu" */
     describe('The menu', function() {
 
-        /* TODO: Write a test that ensures the menu element is
-         * hidden by default. You'll have to analyze the HTML and
-         * the CSS to determine how we're performing the
-         * hiding/showing of the menu element.
+        /* This test that ensures the menu element is
+         * hidden by default.
          */
          it('is hidden by default', function() {
             expect($('body').hasClass('menu-hidden')).toBe(true);
          });
 
-         /* TODO: Write a test that ensures the menu changes
+         /* This test that ensures the menu changes
           * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
+          * has two expectations: the menu displays when
+          * clicked and hides when clicked again.
           */
 
         it('changes visibility on menu icon click', function() {
@@ -74,12 +75,12 @@ $(function() {
         });
     });
 
-    /* TODO: Write a new test suite named "Initial Entries" */
+    /* New test suite named "Initial Entries" */
     describe('Intial Entries', function() {
-        /* TODO: Write a test that ensures when the loadFeed
+        /* This test ensures that when the loadFeed
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
-         * Remember, loadFeed() is asynchronous so this test wil require
+         * Remember, loadFeed() is asynchronous so this test requires
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
          beforeEach(function(done) {
@@ -94,16 +95,17 @@ $(function() {
          });
     });
 
-    /* TODO: Write a new test suite named "New Feed Selection"*/
+    /* New test suite named "New Feed Selection"*/
     describe('New Feed Selection', function() {
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
+        /* This test ensures that when a new feed is loaded
+         * by the loadFeed function the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
         var oldFeed,
             newFeed;
 
+        //Use beforeEach and done to handle asynchronous behavior with callbacks
         beforeEach(function(done) {
             //get first feel URL by class and store in variable oldFeed
             oldFeed = $('.entry-link').attr('href');
